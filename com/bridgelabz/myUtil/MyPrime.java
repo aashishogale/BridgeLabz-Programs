@@ -17,7 +17,7 @@ public class MyPrime {
      for(int i=2;i<value;i++){
        if (value%i==0){
          flag=1;
-         break;
+         break; /*break common to c and java*/
    
        }
       }
