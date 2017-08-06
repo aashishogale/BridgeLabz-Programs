@@ -20,14 +20,12 @@ public class MyPrime {
          break; /*break common to c and java*/
    
        }
-      }
-    if (flag==1)
-{
-System.out.println(value+"is Prime");
-}
-else
-{
-System.out.println(value+"is not prime");
-}
+     }
+    if (flag==1){
+      System.out.println(value+"is Prime");
+    }    
+    else{
+         System.out.println(value+"is not prime");
+    }
   }
 }
