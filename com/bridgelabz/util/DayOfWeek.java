@@ -12,6 +12,8 @@ package com.bridgelabz.util;
 public class DayOfWeek {
     public static void main(String args[]) {
          
+         //declare in integer form month day and year
+
          int month=Integer.parseInt(args[0]);
 
          int day=Integer.parseInt(args[1]);
