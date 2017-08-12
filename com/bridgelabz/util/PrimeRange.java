@@ -1,5 +1,5 @@
 /***************************************************************************
-* Purpose : to calculate the harmonic number
+* Purpose : to display prime numbers between given range
 *
 *@author : Aashish
 *@version : 1.8.0
