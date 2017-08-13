@@ -12,21 +12,25 @@ package com.bridgelabz.util;
 public class FlipCoin {
     public static void main(String args[]){
        
+       //declare and initialize integer values with command line 
        int n=Integer.parseInt(args[0]);
        int heads=0,tails=0;
-              
+   
+       //initialize for loop for the number of times heads and tails       
        for (int i=0;i<n;i++) {
+      
+           //check condition for heads or tails 
            if(Math.random()<0.5) {
-           System.out.println("Heads");
-           heads++;
+              System.out.println("Heads");
+              heads++;
             
            }
     
            else {
-            System.out.println("Tails");
-             tails++;
+              System.out.println("Tails");
+              tails++;
            }
-       }
+       }//end of loop
        
       float headPercentage=(float)100*heads/n;
 
