@@ -73,10 +73,7 @@ public static int[] convert(char firArray[],int firAscii[])
                 firAscii[i]=(int)firArray[i];
             }
 return firAscii;
-         /*for (int i = 0; i < secArray.length; i++) {
-             
-                secAscii[i]=(int)secArray[i];
-            }*/
+        
 
 }
 public static int[] sort(int firAscii[])
@@ -91,17 +88,7 @@ public static int[] sort(int firAscii[])
                                  firAscii[j] = temp;  
                          } 
 }
-/*}
-temp=0;
-              for(int i=0; i < secAscii.length; i++){  
-                 for(int j=1; j < (secAscii.length-i); j++){  
-                          if(secAscii[j-1] > secAscii[j]){  
-                                  
-                                 temp = secAscii[j-1];  
-                                 secAscii[j-1] = secAscii[j];  
-                                 secAscii[j] = temp;  
-                         } 
-}*/
+
 }
 return firAscii;
 }
