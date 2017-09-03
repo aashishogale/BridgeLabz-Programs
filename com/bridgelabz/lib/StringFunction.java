@@ -11,6 +11,8 @@
 
 package com.bridgelabz.lib;
 
+import java.util.Arrays;
+
 
 public class StringFunction {
 
@@ -33,23 +35,25 @@ public class StringFunction {
         int j = 0;
 
         for (int k = 0; k < array.length - 1; k++) {
-            //System.out.println(Arrays.toString(array));
+            temp1 = array[0];
+            array[0] = array[k + 1];
+            array[k + 1] = temp1;
+
+            System.out.println(Arrays.toString(array));
             for (j = 0; j < array.length; j++) {
 
                 for (int i = j; i < array.length - 1; i++) {
                     temp = array[i];
                     array[i] = array[i + 1];
                     array[i + 1] = temp;
-                    //System.out.println(Arrays.toString(array));
+                    
 
                 }
 
                 System.out.println(Arrays.toString(array));
 
             }
-            temp1 = array[0];
-            array[0] = array[k + 1];
-            array[k + 1] = temp1;
+          
         }
     }
 
@@ -72,6 +76,7 @@ public class StringFunction {
     }
 
     public static void main(String args[]) {
+itPermutation("abcd");
 
     }
 
