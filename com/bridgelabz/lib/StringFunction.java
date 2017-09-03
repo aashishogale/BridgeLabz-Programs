@@ -148,7 +148,7 @@ return s2;
 
 
     public static void main(String args[]) {
-     //itPermutation("abcd");
+   
      System.out.println(isAnagram("Avam1","java1"));
      //perm2("abc");
 
