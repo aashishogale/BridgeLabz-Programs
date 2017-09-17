@@ -5,6 +5,7 @@
 * @version  1.0
 * @since    22-08-2017
 ****************************************************************************/
+package com.bridgelabz.lib;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -117,5 +118,13 @@ public class BLStdIn {
         return scanner.nextLine();
 
     }
+	public static void main(String args[])
+	{
+	double []arr=readAllDouble();
+    for(int i=0;i<arr.length;i++)
+{
+	System.out.println(arr[i]);
 
+}
+}
 }

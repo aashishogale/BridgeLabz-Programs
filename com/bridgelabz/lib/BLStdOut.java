@@ -35,7 +35,7 @@ public class BLStdOut {
     }
 	public static void main(String args[])
 	{
-		print("ashish");
+		printf("%40d",4);
 	}
 	
 }

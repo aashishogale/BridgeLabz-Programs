@@ -98,24 +98,24 @@ public class StringFunction {
 	public static String toLowerCase(String string1)
 	{
 	
-	String s2="",s3="";
-	int aChar=0;
-	for (int i = 0; i< string1.length(); i++){
+		String s2="",s3="";
+		int aChar=0;
+		for (int i = 0; i< string1.length(); i++){
 
-		aChar = (int)string1.charAt(i);
-		if (65 <= aChar && aChar<=90){
-		s3 = Character.toString((char)( (aChar + 32) )); 
-		s2=s2+s3;
-		}
+			aChar = (int)string1.charAt(i);
+			if (65 <= aChar && aChar<=90){
+			s3 = Character.toString((char)( (aChar + 32) )); 
+			s2=s2+s3;
+			}
 
-		else{
-		s3 = Character.toString((char)( (aChar) )); 
-		s2=s2+s3;
+			else{
+			s3 = Character.toString((char)( (aChar) )); 
+			s2=s2+s3;
 
-		}  
-	   }
-	return s2;
-	 }
+			}  
+		   }
+		return s2;
+		 }
 
 
     public static boolean isAnagram(String firString, String secString) {
