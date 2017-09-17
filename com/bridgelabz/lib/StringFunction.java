@@ -31,18 +31,15 @@ public class StringFunction {
     }
 
   
-   public static void perm2(String permString) {
+   public static void permutate(String permString) {
         int number = permString.length();
         char[] permArray = new char[number];
         for (int i = 0; i < number; i++)
             permArray[i] = permString.charAt(i);
-        perm2(permArray, number);
+        permutate(permArray, number);
     }
 
-    private static void perm2(char[] permArray, int number) {
-      
-        
-
+    private static void permutate(char[] permArray, int number) {
         if (number == 1) {
             System.out.println(new String(permArray));
             return;
@@ -50,7 +47,7 @@ public class StringFunction {
         for (int i = 0; i < number; i++) {
             swap(permArray, i, number-1);
             
-           perm2(permArray, number-1);
+           permutate(permArray, number-1);
             
             swap(permArray, i, number-1);
 
@@ -66,55 +63,59 @@ public class StringFunction {
 
          
     }
-public static int[] convert(char firArray[],int firAscii[])
-{
- for (int i = 0; i < firArray.length; i++) {
-             
-                firAscii[i]=(int)firArray[i];
-            }
-return firAscii;
-        
+	
+//convert to character array
+	public static int[] convert(char firArray[],int firAscii[])
+	{
+	 for (int i = 0; i < firArray.length; i++) {
+				 
+					firAscii[i]=(int)firArray[i];
+				}
+	return firAscii;
+			
 
-}
-public static int[] sort(int firAscii[])
-{
-         int temp=0;
-          for(int i=0; i < firAscii.length; i++){
-                 for(int j=1; j < (firAscii.length-i); j++){
-                          if(firAscii[j-1] > firAscii[j]){  
-                               
-                                 temp = firAscii[j-1];  
-                                 firAscii[j-1] = firAscii[j];  
-                                 firAscii[j] = temp;  
-                         } 
-}
+	}
 
-}
-return firAscii;
-}
-public static String toLowerCase(String string1)
-{
-String s2="",s3="";
-int aChar=0;
-for (int i = 0; i< string1.length(); i++){
+//sort the character array
+	public static int[] sort(int firAscii[])
+	{
+			 int temp=0;
+			  for(int i=0; i < firAscii.length; i++){
+					 for(int j=1; j < (firAscii.length-i); j++){
+							  if(firAscii[j-1] > firAscii[j]){  
+								   
+									 temp = firAscii[j-1];  
+									 firAscii[j-1] = firAscii[j];  
+									 firAscii[j] = temp;  
+							 } 
+						}
 
-    aChar = (int)string1.charAt(i);
-    if (65 <= aChar && aChar<=90){
-    s3 = Character.toString((char)( (aChar + 32) )); 
-    s2=s2+s3;
-    }
-else
-{
-s3 = Character.toString((char)( (aChar) )); 
-    s2=s2+s3;
+				}
+	return firAscii;
+	}
 
-}
+//convert to lower case
+	public static String toLowerCase(String string1)
+	{
+	
+	String s2="",s3="";
+	int aChar=0;
+	for (int i = 0; i< string1.length(); i++){
 
+		aChar = (int)string1.charAt(i);
+		if (65 <= aChar && aChar<=90){
+		s3 = Character.toString((char)( (aChar + 32) )); 
+		s2=s2+s3;
+		}
 
-   
- }
-return s2;
- }
+		else{
+		s3 = Character.toString((char)( (aChar) )); 
+		s2=s2+s3;
+
+		}  
+	   }
+	return s2;
+	 }
 
 
     public static boolean isAnagram(String firString, String secString) {
@@ -149,8 +150,8 @@ return s2;
 
     public static void main(String args[]) {
    
-     System.out.println(isAnagram("Avam1","java1"));
-     //perm2("abc");
+     System.out.println(isAnagram("Avaj1","java1"));
+     permutate("abc");
 
      
 

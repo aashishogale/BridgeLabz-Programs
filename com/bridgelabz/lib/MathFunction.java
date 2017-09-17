@@ -325,6 +325,8 @@ public class MathFunction {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+		int []arr={1,2,3,4};
+		System.out.println(MathFunction.maxValue(arr)); 
     }
 
 }

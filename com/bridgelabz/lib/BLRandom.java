@@ -1,11 +1,11 @@
-***************************************************************************
+/***************************************************************************
 * Purpose : To create class for random number genration
 *
 * @author   Aashish
 * @version  1.0
 * @since    21-08-2017
 ****************************************************************************/
-
+package com.bridgelabz.lib;
 import java.util.Random;
 
 public class BLRandom {
@@ -60,7 +60,19 @@ public class BLRandom {
                 temp = arr[i];
                 arr[i] = arr[randomIndex];
                 arr[randomIndex] = temp;
+				System.out.println(arr[i]);
             }
         }
     }
+	
+	
+public static void main(String args[])
+{
+	double []arr={10d,9d,5d};
+	new BLRandom().shuffle(arr);
+	System.out.println(guassian(2.0d,3.0d));
+	System.out.println(uniform(3));
+	System.out.println(uniform(3.0d,6.0d));
+	
+}
 }

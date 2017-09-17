@@ -6,6 +6,7 @@
 * @version  1.0
 * @since    18-08-2017
 ****************************************************************************/
+package com.bridgelabz.lib;
 public class BLStats {
 
     //find maximum number
@@ -54,9 +55,18 @@ public class BLStats {
                 }
             }
         }
-        mIndex = a.length / 2;
-        median = a[mIndex - 1];
+		mIndex = a.length / 2;
+		if(a.length%2==0){
+			median=(a[mIndex+-1]+a[mIndex])/2;
+			return median;
+			
+		}
+		else {
+			
+        
+        median = a[mIndex];
         return median;
+		}
 
     }
    
@@ -76,5 +86,12 @@ public class BLStats {
    public static double stddev(double[] a){
 		double variance = Math.sqrt(var(a));
 		return variance;
+   }
+	
+    
+   public static void main(String[] args)
+	{
+		 double []arr={1.0d,2.0d,3.0d,4.0d};
+		System.out.println(median(arr));
 	}
 }
