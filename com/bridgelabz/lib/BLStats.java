@@ -91,7 +91,7 @@ public class BLStats {
     
    public static void main(String[] args)
 	{
-		 double []arr={1.0d,2.0d,3.0d,4.0d};
-		System.out.println(median(arr));
+		double []arr={1.0d,2.0d,3.0d,4.0d};
+		System.out.println(var(arr));
 	}
 }

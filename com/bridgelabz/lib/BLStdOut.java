@@ -5,8 +5,10 @@
 * @version  1.0
 * @since    23-08-2017
 ****************************************************************************/
+package com.bridgelabz.lib;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+
 
 public class BLStdOut {
     static PrintWriter out;
@@ -18,7 +20,7 @@ public class BLStdOut {
         }
     }
     public static void print(String s){
-        out.print(s);
+       out.print(s);
     }
     public static void println(String s){
         out.println(s);
@@ -31,4 +33,9 @@ public class BLStdOut {
     public static void printf(String format,Object... args){
         out.printf(format, args);
     }
+	public static void main(String args[])
+	{
+		print("ashish");
+	}
+	
 }
